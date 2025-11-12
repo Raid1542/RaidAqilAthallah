@@ -1,46 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Praktikum 9 Aqil</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Formulir Praktikum</h1>
 
     <form action="#" method="get">
-        <label>Nama Lengkap:</label>
-        <input type="text" name="nama" placeholder="isi nama" required> <br> <br>
+      <div>
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" name="nama" id="nama" placeholder="isi nama" required />
+      </div>
 
+      <div>
         <label>Email:</label>
-        <input type="email" name="email" placeholder="isi email" required> <br> <br>
+        <input type="email" name="email" placeholder="isi email" required />
+      </div>
 
+      <div>
         <label>Password:</label>
-        <input type="password" name="password" placeholder="isi password" required> <br> <br>
+        <input
+          type="password"
+          name="password"
+          placeholder="isi password"
+          required
+        />
+      </div>
 
+      <div>
         <label>Tanggal Lahir:</label>
-        <input type="date" name="tgl_lahir" required> <br> <br>
+        <input type="date" name="tgl_lahir" required />
+      </div>
 
-        <label>Jenis Kelamin:</label> <br>
-        <input type="radio" name="jenis_kelamin" value="Pria" required> Pria <br> 
-        <input type="radio" name="jenis_kelamin" value="Wanita" required> Wanita <br> <br>
+      <div>
+        <label>Jenis Kelamin:</label> <br />
+        <input type="radio" name="jenis_kelamin" value="Pria" required /> Pria
+        <br />
+        <input type="radio" name="jenis_kelamin" value="Wanita" required />
+        Wanita
+      </div>
 
-        <label>Alamat:</label> <br>
-        <textarea name="alamat" id="alamat" placeholder="isi alamat"></textarea> <br> <br>
-        
+      <div>
+        <label>Alamat:</label> <br />
+        <textarea name="alamat" id="alamat" placeholder="isi alamat"></textarea>
+      </div>
+
+      <div>
         <label>Program Studi:</label>
         <select name="prodi" id="prodi">
-            <option>-- Pilih Prodi --</option>
-            <option>Informatika</option>
-            <option>Elektronika</option>
-            <option>Mesin</option>
-        </select> <br> <br>
+          <option>-- Pilih Prodi --</option>
+          <option>Informatika</option>
+          <option>Elektronika</option>
+          <option>Mesin</option>
+        </select>
+      </div>
 
-        <button type="submit">Kirim</button> <br> <br>
+      <div>
+        <button type="submit">Kirim</button>
+      </div>
 
-        <button type="reset">Reset</button> <br> <br>
+      <div>
+        <button type="reset">Reset</button>
+      </div>
 
+      <div>
         <button type="button" onclick="alert('Data Dihapus')">Hapus</button>
+      </div>
     </form>
-</body>
+  </body>
 </html>
